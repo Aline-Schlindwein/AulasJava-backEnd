@@ -8,20 +8,25 @@ package com.senac.petshop;
  *
  * @author Aluno
  */
-public class Gato extends Animal {
+public class Ave extends Animal {
 
-    public Gato(String nome, int idade) {
+    public String corDasAsas;
+    public int tamanhoDoBico;
+
+    public Ave(String nome, int idade, String corDasAsas, int tamanhoDoBico) {
         super(nome, idade);
+        this.corDasAsas = corDasAsas;
+        this.tamanhoDoBico = tamanhoDoBico;
     }
 
-     //metodos
     @Override
-    public void interagir(){
-        System.out.println("Miau miau");
+    public void interagir() {
+        System.out.println("Có có");
     }
 
     @Override
     public String getNome() {
         return this.nome;
     }
+
 }

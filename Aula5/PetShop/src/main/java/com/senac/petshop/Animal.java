@@ -8,13 +8,21 @@ package com.senac.petshop;
  *
  * @author Aluno
  */
-public abstract class Animal {
-     //atributos
+public class Animal {
+
     public String nome;
     public int idade;
-    public String alimentacao;
-    
-    public abstract void interagir();
-    public abstract String getNome(); 
-     
+
+    public Animal(String nome, int idade) {
+        this.nome = nome;
+        this.idade = idade;
+    }
+
+    public void interagir() {
+    }
+
+    public String getNome() {
+        return nome;
+    }
+
 }
