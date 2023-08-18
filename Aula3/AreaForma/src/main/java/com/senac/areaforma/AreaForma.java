@@ -1,7 +1,6 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
 package com.senac.areaforma;
 
 /**
@@ -14,9 +13,14 @@ public class AreaForma {
         Circulo circulo = new Circulo(13.65);
         circulo.calculoArea();
         System.out.println("area do circulo: " + circulo.area);
-       
-        Retangulo retangulo = new Retangulo(10,6);
+
+        Retangulo retangulo = new Retangulo(10, 6);
         retangulo.calculoArea();
         System.out.println("area do retangulo: " + retangulo.area);
+
+        Quadrado quadrado = new Quadrado(4);
+        quadrado.calculoArea();
+        System.out.println("area do quadrado: " + quadrado.area);
+
     }
 }

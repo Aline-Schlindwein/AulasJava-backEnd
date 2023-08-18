@@ -8,9 +8,18 @@ package com.senac.areaforma;
  *
  * @author Aluno
  */
-public abstract class Forma {
+public class Quadrado extends Forma {
 
-    public double area;
+    public int lado;
 
-    public abstract void calculoArea();
+    public Quadrado(int lado) {
+        this.lado = lado;
+
+    }
+
+    @Override
+    public void calculoArea() {
+        this.area = lado * lado;
+        System.out.println(area);
+    }
 }

@@ -9,18 +9,19 @@ package com.senac.areaforma;
  * @author Aluno
  */
 public class Retangulo extends Forma {
+
     public int comprimento;
     public int altura;
-    
-    public Retangulo(int comprimento, int altura){
+
+    public Retangulo(int comprimento, int altura) {
         this.comprimento = comprimento;
         this.altura = altura;
     }
 
     @Override
     public void calculoArea() {
-        this.area = altura*comprimento;
+        this.area = altura * comprimento;
         System.out.println(area);
-       
+
     }
 }
